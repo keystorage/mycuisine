@@ -305,22 +305,7 @@ div[class^="bg-text"] p {
 .color3 {
 	color: #564733; /* 茶色 */
 } 
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-.flex>p{
-    width: 49%;
-}
 
-.url{
-	float:left;
-	margin-left:50px;
-}
-.supplement {
-	font-size: 90%;
-	color: #6C6C6C; /* 補足 */
-}
 
 /* sub.html */
 .content_sub {
@@ -784,12 +769,21 @@ div[id^="max_width"] {
 	margin-top:30px;
 	float:left;
 }
+@media screen and (min-width:768px){
 .flex_sample1{
 	display: flex;
 }
 .flex_sample1,p{
 	margin-top:30px;
 	font-size:18px;
+}
+}
+.flex_sample1{
+
+}
+.flex_sample1, p{
+	margin-top:30px;
+	font-size:100%;
 }
 .sb_title{
 	font-size:20px;
@@ -808,3 +802,29 @@ div[id^="max_width"] {
 	margin-top:0px;
 	text-align:left;
 }
+
+/* access */
+@media screen and (min-width:768px){
+	.flex{
+		display:flex;
+		justify-content: space-between;
+}
+.flex>p{
+	width: 49%;
+}
+	}
+	.flex{
+
+	}
+	.flex>p{
+		width: 100%;
+	}
+	
+	.url{
+		float:left;
+		margin-left:50px;
+	}
+	.supplement {
+		font-size: 90%;
+		color: #6C6C6C; /* 補足 */
+	}
