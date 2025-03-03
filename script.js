@@ -19,7 +19,7 @@ $(function(){
 	var site_title = $('#site_title');
 	var header = $('header');
 	var content1 = $('#content1');
-	var menu_button = $('#menu_button');
+	// var menu_button = $('#menu_button');
 	var nav = $('#nav_mo');
 	var touch_start = ('ontouchstart' in window);
 	var modal_window = $('#modal_window');
