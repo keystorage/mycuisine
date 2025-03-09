@@ -189,9 +189,9 @@ $(function(){
 	stage_first.animate({opacity:1}, first_photo);
 	for (var i = 1; i <= last; i++) {
 		if (i == 1) {
-			$('#slide_control #number_last').append('<span id="photo_'+i+'"><img src="images/active.png"/></span>');
+			$('#slide_control #number_last').append('<span id="photo_'+i+'"><img src="C:/Users/Kei/VScord/tbte/images/active.png"/></span>');
 		} else {
-			$('#slide_control #number_last').append('<span id="photo_'+i+'"><img src="images/active.png"/></span>');
+			$('#slide_control #number_last').append('<span id="photo_'+i+'"><img src="C:/Users/Kei/VScord/tbte/images/active.png"/></span>');
 			$('#photo_'+i).css('opacity', 0.5);
 		}
 		$('#photo_'+i).css('width', '20px');
@@ -220,12 +220,12 @@ $(function(){
 			}
 		},slide_time);
 		state = 1;
-		play_stop.html('<img src="images/stop.png" alt="停止"/>');
+		play_stop.html('<img src="C:/Users/Kei/VScord/tbte/images/stop.png" alt="停止"/>');
 	}
 	function slide_stop (){
 		clearInterval(slide_set);
 		state = 0;
-		play_stop.html('<img src="images/play.png" alt="再生"/>');
+		play_stop.html('<img src="C:/Users/Kei/VScord/tbte/images/play.png" alt="再生"/>');
 	}
 	slide_start();
 	$("[id^='photo_']").on('click', function(){ 
